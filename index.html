@@ -8,14 +8,14 @@
 
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- HEADER -->
   <nav class="navbar">
     <div class="container">
-      <i class="material-icons-outlined">menu</i>
+      <i class="material-icons-outlined nav">menu</i>
       <img src="./img/YouTube-logo.png" alt="YouTube logo" class="logo">
     </div>
 
@@ -25,19 +25,101 @@
           <p class="search-text">Search</p>
         </div>
         <button class="search-btn">
-          <i class="material-icons-outlined">search</i>
+          <i class="material-icons-outlined nav">search</i>
         </button>
       </div>
       
-      <i class="material-icons-outlined center-icons">mic</i>
+      <i class="material-icons-outlined nav center-icons">mic</i>
     </div>
     
     <div class="container">
-      <i class="material-icons-outlined right-icons">video_call</i>
-      <i class="material-icons-outlined right-icons">apps</i>
-      <i class="material-icons-outlined right-icons">notifications</i>
+      <i class="material-icons-outlined nav right-icons">video_call</i>
+      <i class="material-icons-outlined nav right-icons">apps</i>
+      <i class="material-icons-outlined nav right-icons">notifications</i>
       <img src="./img/profile-picture.jpg" alt="user profile picture" class="profile-picture">
     </div>
   </nav>
+
+  <!-- MAIN SECTION -->
+  <section class="section">
+
+    <div class="column-left">
+      <iframe width="950" height="514" src="https://www.youtube.com/embed/wGF7PswOENQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+      <!-- VIDEO STATS -->
+      <div class="video-stats">
+        <h1 class="video-title">Lord Huron - The Night We Met (Official Lyric Video)</h1>
+
+        <div class="views-buttons">
+          <small class="view-count">138,467,576 views · May 16, 2017</small>
+
+          <div class="button-row">
+            <button class="video-btn">
+              <i class="material-icons-outlined video">thumb_up</i>
+              1.5M
+            </button>
+
+            <button class="video-btn">
+              <i class="material-icons-outlined video">thumb_down</i>
+              DISLIKE
+            </button>
+
+            <button class="video-btn">
+              <i class="material-icons-outlined video">reply</i>
+              SHARE
+            </button>
+  
+            <button class="video-btn">
+              <i class="material-icons-outlined video">playlist_add</i>
+              SAVE
+            </button>
+            
+            <button class="video-btn">
+              <i class="material-icons-outlined video">more_horiz</i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHANNEL -->
+      <div class="channel">
+
+        <!-- CHANNEL INFO -->
+        <div class="channel-info">
+          <div class="channel-row">
+            <img src="./img/lord-huron.jpeg" alt="Lord Huron YouTube channel icon" class="channel-img">
+
+            <div class="channel-name">
+              <a class="owner">Lord Huron</a>
+              <p class="sub-count">734K subscribers</p>
+            </div>
+          </div>
+
+          <button class="sub-btn">SUBSCRIBE</button>
+        </div>
+
+        <!-- VIDEO DESCRIPTION -->
+        <div class="video-description">
+          <p class="description-text">
+            Order Strange Trails featuring "The Night We Met" now: <a href="http://smarturl.it/iLHStrangeTrails">http://smarturl.it/iLHStrangeTrails</a>
+            <br><br>
+            Directed by:
+          </p>
+
+          <button class="expand-btn">SHOW MORE</button>
+        </div>
+      </div>
+      
+
+      <!-- COMMENTS -->
+      
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="column-right">
+      
+    </div>
+
+  </section>
 </body>
 </html>
