@@ -212,3 +212,24 @@ input {
   height: 44px;
   width: 100%;
 }
+
+/* FOOTER */
+
+.main-footer {
+  color: rgb(80, 80, 80);
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+  padding: 20px 0;
+}
+
+li a {
+  color: rgb(80, 80, 80);
+}
+
+.privacy-settings {
+  background-color: rgb(255, 255, 255);
+  font-size: 14px;
+  padding: 20px;
+  margin-top: 52px;
+}
