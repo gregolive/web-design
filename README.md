@@ -1,5 +1,3 @@
-# Youtube Video Player
+# WEB DESIGN PRACTICE
 
-Created to practice building HTML and CSS from scratch.
-
-[Live demo](https://gregolive.github.io/youtube-video-player/) 👈
+A series of small projects made to practice building HTML and CSS from scratch.
