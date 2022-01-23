@@ -121,7 +121,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   color: #002837;
 }
 
-.main-nav a.selected, .main-nav a.secondary {
+.main-nav a.selected-nav, .main-nav a.secondary {
   color: #00B3E5;
 }
 
@@ -129,7 +129,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   font-size: 14px;
 }
 
-a.selected, .main-nav a:hover {
+a.selected-nav, .main-nav a:hover {
   border-bottom: 5px solid rgb(0, 40, 55);
 }
 
@@ -270,7 +270,9 @@ p strong {
 }
 
 .article-tags ul {
-  margin: 0 0 0.6875rem 0;
+  line-height: 1.4375rem;
+  margin-bottom: 0.6875rem;
+
 }
 
 .article-tags li {
@@ -289,4 +291,114 @@ p strong {
 
 .article-tags a:hover {
   background-color: rgb(40, 142, 183);
+}
+
+/* ARTICLE FOOTER */
+
+.article-footer {
+  margin-bottom: 1.375rem;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2%;
+  margin-bottom: 1.375rem;
+  padding-top: 1rem;
+}
+
+.promo-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0.6875rem;
+}
+
+.promo-content img {
+  height: auto;
+  width: 100%;
+}
+
+.promo-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-btns a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 0.188rem;
+  line-height: 1rem;
+  padding: 0.45833rem;
+  margin-bottom: 0.6875rem;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-btn { background-color: rgb(40, 142, 183); }
+.app-btn { background-color: rgb(32, 178, 170); }
+.buy-btn { background-color: rgb(255, 0, 0); }
+
+/* ASIDE */
+
+aside {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 3px;
+}
+
+aside a {
+  color: rgb(77, 77, 77);
+  font-weight: 700;
+}
+
+.aside-nav, .aside-article {
+  background-color: #f5f5f5;
+}
+
+.aside-header {
+  display: flex;
+}
+
+.aside-nav {
+  border-right: 3px solid #fff;
+  flex: 1 0 auto;
+  padding: 0.45833rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside-nav .selected {
+  background-color: rgb(0, 179, 229);
+}
+
+.aside-nav:last-child {
+  border-right: none;
+}
+
+.aside-article {
+  grid-column: 1 / -1;
+  border-top: 3px solid #fff;
+  padding: 0.6875rem;
+  font-size: 1.375rem;
+  line-height: 1.5625rem;
+  display: flex;
+}
+
+.aside-article a {
+  margin-right: 1.375rem;
+}
+
+.aside-article a:hover {
+  color: rgb(0, 179, 229);
+}
+
+.aside-article span {
+  color: rgb(0, 179, 229);
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
