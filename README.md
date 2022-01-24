@@ -14,3 +14,6 @@ Practice building forms in HTML by recreating [Mint.com's signup page](https://a
 
 Implementing CSS grid and flexbox to duplicate a [news article from NewScientist](https://www.newscientist.com/article/2286218-ancient-lake-in-marss-gale-crater-may-have-actually-been-a-small-pond/).
 
+## 4. Apple Homepage
+
+Cloning [Apple's homepage from 2014](https://web.archive.org/web/20140301004610/http://www.apple.com/) to try using background images and gradients.
