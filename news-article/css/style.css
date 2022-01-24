@@ -665,3 +665,53 @@ img.store-btn {
 .fa-arrow-alt-circle-up {
   font-size: 40px;
 }
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 1280px) {
+  .header-promo, .header-nav {
+    display: none;
+  }
+
+  .page-header {
+    border-bottom: none;
+  }
+
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-subscribe {
+    margin-top: 0.6875rem;
+    padding: 0.6875rem 0;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .main-content article {
+    max-width: 100%;
+  }
+
+  .article-header h1 {
+    font-size: 1.8em;
+    line-height: 2.1875rem;
+  }
+
+  figure img {
+    width: 100%;
+  }
+
+  .main-content aside {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .aside-article {
+    justify-content: space-between;
+    border-top: none;
+  }
+}
