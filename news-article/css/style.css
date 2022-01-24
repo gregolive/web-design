@@ -272,11 +272,12 @@ p strong {
 .article-tags ul {
   line-height: 1.4375rem;
   margin-bottom: 0.6875rem;
-
+  display: flex;
 }
 
 .article-tags li {
   margin: 0;
+  display: flex;
 }
 
 .article-tags a {
@@ -401,4 +402,84 @@ aside a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+/* RELATED ARTICLES */
+.related-articles {
+  max-width: 70.62495rem;
+  margin: 0 auto;
+  padding: 0 0.93747rem;
+}
+
+.related-wrapper {
+  margin-bottom: 1.375rem;
+  padding-top: 1rem;
+}
+
+.related-articles h2 {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -.0375rem;
+  margin: 0 0 0.93747rem;
+}
+
+.article-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 0 23.5%;
+  margin-right: 2%;
+  max-width: 23.5%;
+  width: 23.5%;
+  position: relative;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.img-wrapper {
+  height: auto;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  transition: all .2s;
+}
+
+.card-img h2 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -.0375rem;
+  line-height: 1.5625rem;
+  margin: 0;
+  transition: all .2s;
+}
+
+.card-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  color: #fff;
+  background-color: #4d4d4d;
+  padding: 0.45833rem;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.card-header:hover {
+  text-decoration: underline;
+}
+
+/* PAGE FOOTER */
+
+.page-footer {
+  max-width: 70.62495rem;
+  margin: 0 auto;
+  padding: 0 0.93747rem;
 }
