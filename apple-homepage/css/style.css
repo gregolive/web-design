@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: 'Lucida Grande', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
@@ -141,7 +143,7 @@ a.header-prompt {
   display: grid;
   column-gap: 2px;
   grid-template-columns: repeat(4, 1fr);
-  height: calc(100vh - 556px);
+  height: calc(100vh - 538px);
 }
 
 .bottom-cards a {
@@ -162,3 +164,56 @@ a.header-prompt {
   background: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_supplier_responsibility.jpg") 50% 100% no-repeat;
 }
 
+footer {
+  color: #6e6e6e;
+  font-size: 10px;
+  line-height: 1.2;
+  height: 90px;
+  min-width: 980px;
+}
+
+.footer-wrapper {
+  margin: 0 auto;
+  width: 980px;
+  padding: 1em 0 2.6em;
+  display: grid;
+  grid-template-columns: 49% 51%;
+  grid-template-rows: repeat(2, calc(12px + 1.5em));
+}
+
+footer p {
+  padding: 1.5em 0 0 0;
+  margin: 0;
+}
+
+footer a {
+  color: #08c;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0;
+  padding: 1.5em 0 0 0;
+  min-width: none;
+  display: flex;
+}
+
+li {
+  display: inline;
+  margin-left: 0.6em;
+  padding-left: 0.6em;
+  border-left: 1px solid #ccc;
+}
+
+li img {
+  height: 16px;line-height: 1.2;
+}
+
+li:first-child, li.terms {
+  border-left: none;
+  margin-left: 0;
+  padding-left: 0;
+}
