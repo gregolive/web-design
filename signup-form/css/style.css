@@ -1,0 +1,63 @@
+/* MAIN */
+
+:root {
+  --primary-color: #F59D33;
+  --secondary-color: #EA4D3B;
+  --light-color: #FEF6EC;
+}
+
+body {
+  margin: 0;
+  background-color: var(--light-color)
+}
+
+.container {
+  display: flex;
+}
+
+/* IMAGE COLUMN */
+
+.img-column {
+  background: center / contain no-repeat url(../img/espresso-pull.jpg);
+  background-size: 491px 736px;
+  position: relative;
+  left: 0;
+  width: 34vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-name {
+  color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20vh;
+}
+
+.site-name img {
+  height: 5rem;
+}
+
+.site-name h1 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 4rem;
+  margin: 1rem 0.2rem;
+}
+
+.background-caption {
+  color: white;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 1vh;
+}
+
+.background-caption a {
+  color: white;
+}
+
+/* FORM COLUMN */
