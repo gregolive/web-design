@@ -4,11 +4,14 @@
   --primary-color: #F59D33;
   --secondary-color: #EA4D3B;
   --light-color: #FEF6EC;
+  --primary-font: 'Open Sans', sans-serif;
+  --logo-font: 'Cabin', sans-serif;
 }
 
 body {
   margin: 0;
-  background-color: var(--light-color)
+  background-color: var(--light-color);
+  font-family: var(--primary-font);
 }
 
 .container {
@@ -36,7 +39,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 20vh;
+  margin-top: 12vh;
 }
 
 .site-name img {
@@ -44,7 +47,7 @@ body {
 }
 
 .site-name h1 {
-  font-family: 'Cabin', sans-serif;
+  font-family: var(--logo-font);
   font-size: 4rem;
   margin: 1rem 0.2rem;
 }
@@ -60,4 +63,58 @@ body {
   color: white;
 }
 
+.background-caption a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
 /* FORM COLUMN */
+
+.form-column {
+  width: 66vw;
+  margin-top: 18vh;
+}
+
+.prompt {
+  padding: 0 2.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.prompt strong {
+  color: var(--primary-color);
+  font-family: var(--logo-font);
+  font-size: 1.25rem;
+}
+
+form {
+
+}
+
+.form-wrapper {
+  background-color: white;
+  padding: 1rem 2.5rem;
+}
+
+form h2 {
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+fieldset div {
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 2.5rem;
+}

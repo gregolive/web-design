@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pulled</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -24,7 +24,58 @@
     </div>
 
     <div class="form-column">
-      
+      <form action="/signup" method="post">
+
+        <div class="prompt">
+          <p>Keep track of your espresso shots, coffee beans, recipes, and more with <strong>pulled</strong>.</p>
+          <p>Sign up <em>now</em> to get started. You know you want to.</p>
+        </div>
+
+        <div class="form-wrapper">
+          <h2>Let's do this!</h2>
+
+          <fieldset>
+            <div>
+              <label for="firstname">FIRST NAME</label>
+              <input type="text" id="firstname" name="firstname" placeholder="Coffee">
+            </div>
+            
+            <div>
+              <label for="lastname">LAST NAME</label>
+              <input type="text" id="lastname" name="lastname" placeholder="Addict">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div>
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" placeholder="coffee@addict.com">
+            </div>
+            
+            <div>
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div>
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="password">
+            </div>
+            
+            <div>
+              <label for="password-confirm">CONFIRM PASSWORD</label>
+              <input type="password" id="password-confirm" name="password-confirm">
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="links">
+          <button type="submit">Create Account</button>
+          <span>Already have an account? <a href="">Log in</a></span>
+        </div>
+      </form>
     </div>
   </div>
 </body>
