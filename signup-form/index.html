@@ -40,38 +40,39 @@
           <fieldset>
             <div>
               <label for="firstname">FIRST NAME</label>
-              <input type="text" id="firstname" name="firstname" placeholder="Coffee">
+              <input type="text" id="firstname" name="firstname" placeholder="Coffee" autofocus="true" class="focus" required>
             </div>
             
             <div>
               <label for="lastname">LAST NAME</label>
-              <input type="text" id="lastname" name="lastname" placeholder="Addict">
+              <input type="text" id="lastname" name="lastname" placeholder="Addict" required>
             </div>
           </fieldset>
 
           <fieldset>
             <div>
               <label for="email">EMAIL</label>
-              <input type="email" id="email" name="email" placeholder="coffee@addict.com">
+              <input type="email" id="email" name="email" placeholder="coffee@addict.com" required>
             </div>
             
             <div>
               <label for="phone">PHONE NUMBER</label>
-              <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+              <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
             </div>
           </fieldset>
 
           <fieldset>
             <div>
               <label for="password">PASSWORD</label>
-              <input type="password" id="password" name="password">
+              <input type="password" id="password" name="password" minlength="6" class="error" required>
             </div>
             
             <div>
               <label for="password-confirm">CONFIRM PASSWORD</label>
-              <input type="password" id="password-confirm" name="password-confirm">
+              <input type="password" id="password-confirm" name="password-confirm" minlength="6" class="error" required>
             </div>
           </fieldset>
+          <span class="error-msg">* Passwords do not match</span>
         </div>
 
         <div class="links">

@@ -4,6 +4,7 @@
   --primary-color: #F59D33;
   --secondary-color: #EA4D3B;
   --light-color: #FEF6EC;
+  --error-color: #d00000;
   --primary-font: 'Open Sans', sans-serif;
   --logo-font: 'Cabin', sans-serif;
 }
@@ -72,7 +73,7 @@ body {
 
 .form-column {
   width: 66vw;
-  margin-top: 15vh;
+  margin-top: 13vh;
 }
 
 .prompt {
@@ -85,10 +86,6 @@ body {
   color: var(--primary-color);
   font-family: var(--logo-font);
   font-size: 1.25rem;
-}
-
-form {
-
 }
 
 .form-wrapper {
@@ -127,6 +124,24 @@ form input {
   font-size: 1em;
   padding: 0.25rem 0.3rem;
   margin-right: 3rem;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+form .focus {
+  border: 2px solid var(--primary-color);
+  border-radius: 3px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+form .error {
+  border: 1px solid var(--error-color);
+  border-radius: 3px;
+}
+
+.error-msg {
+  color: var(--error-color);
+  font-size: 0.75rem;
 }
 
 .links {
@@ -146,6 +161,11 @@ form input {
   border: none;
   border-radius: 5px;
   margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.links button:hover {
+  filter: brightness(110%);
 }
 
 .links span {
@@ -160,4 +180,22 @@ form input {
 
 .links a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+  fieldset div {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1024px) {
+  fieldset div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  fieldset div {
+    background-color: 50%;
+  }
 }
