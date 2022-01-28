@@ -17,7 +17,3 @@ Implementing CSS grid and flexbox to duplicate a [news article from NewScientist
 ## 4. Apple Homepage
 
 Cloning [Apple's homepage from 2014](https://web.archive.org/web/20140301004610/http://www.apple.com/) to try using background images and gradients.
-
-## 5. Signup Form
-
-Building a signup page for a fake website from scratch.
